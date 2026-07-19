@@ -185,3 +185,13 @@ Humanoid.Died:Connect(StopFly)
 
 print("✅ Улучшенный Mobile Fly Pro загружен!")
 print("Перетаскивай окно за заголовок")
+-- Добавь эту иконку в свой Fly скрипт
+
+local Icon = Instance.new("ImageLabel")
+Icon.Name = "FlyIcon"
+Icon.Size = UDim2.new(0, 45, 0, 45)
+Icon.Position = UDim2.new(0, 15, 0, 8)
+Icon.BackgroundTransparency = 1
+Icon.Image = "rbxassetid:14292800000"  -- временный плейсхолдер
+Icon.ImageColor3 = Color3.fromRGB(0, 200, 255)
+Icon.Parent = MainFrame  -- или Title если есть
